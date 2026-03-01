@@ -1,10 +1,16 @@
-import random
-s = "a"*int(2e5)
-for _ in range((int(2e5))):
-    char = random.choice("abcdefghijklmnopqrstuvwxyz")
-    s += char
-with open("testcase.txt", "w") as f:
-    f.write("1" + "\n")
-    for i in range(1):
-        f.write("200000" + "\n")
-        f.write(s + "\n")
+class CloudxLab:
+    def process(self):
+        print("Process is Running")
+
+class User(CloudxLab):
+    def process(a=10):
+        print(1)
+    
+    def process(self):
+        print(2)
+
+# Create an instance of User
+obj = User()
+
+# Call the process method
+obj.process()
